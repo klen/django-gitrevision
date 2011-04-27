@@ -1,7 +1,7 @@
 MODULE=gitrevision
 
 clean:
-	sudo rm -rf build dist $(MODULE).egg-info
+	sudo rm -rf build dist django_gitrevision.egg-info
 	find . -name "*.pyc" -delete
 	find . -name "*.orig" -delete
 
@@ -12,7 +12,7 @@ register: _register clean
 remove:
 	sudo pip uninstall $(MODULE)
 
-upload: _upload clean _commit doc
+upload: _upload clean _commit
 
 test:
 	cd example_project && ./manage.py test main
