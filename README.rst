@@ -26,7 +26,7 @@ Setup and use
 
 #. If you want use git revision **only in templates** add gitrevision context processor in settings: ::
 
-        TEMPLATE_CONTEXT_PROCESSORS += 'git_revision.context_processor',
+        TEMPLATE_CONTEXT_PROCESSORS += 'git_revision.context_processors.gitrevision',
 
    And use `GIT_REVISION` var in templates: ::
 
@@ -36,7 +36,7 @@ Setup and use
 
 #. Or if you want use git revision in **views and templates**, add gitrevision middleware in settings: ::
 
-        MIDDLEWARE_CLASSES += 'git_revision.middleware',
+        MIDDLEWARE_CLASSES += 'git_revision.middleware.GitRevision',
 
    Using in views: ::
 
