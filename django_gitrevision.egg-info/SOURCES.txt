@@ -1,0 +1,13 @@
+MANIFEST.in
+README
+setup.py
+django_gitrevision.egg-info/PKG-INFO
+django_gitrevision.egg-info/SOURCES.txt
+django_gitrevision.egg-info/dependency_links.txt
+django_gitrevision.egg-info/requires.txt
+django_gitrevision.egg-info/top_level.txt
+gitrevision/__init__.py
+gitrevision/__init__.pyc
+gitrevision/context_processors.py
+gitrevision/middleware.py
+gitrevision/utils.py
