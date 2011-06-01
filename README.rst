@@ -24,9 +24,13 @@ Installation
 Setup and use
 =============
 
+#. Add `gitrevision` to INSTALLED_APPS: ::
+
+        INSTALLED_APPS += 'gitrevision',
+
 #. If you want use git revision **only in templates** add gitrevision context processor in settings: ::
 
-        TEMPLATE_CONTEXT_PROCESSORS += 'git_revision.context_processors.gitrevision',
+        TEMPLATE_CONTEXT_PROCESSORS += 'gitrevision.context_processors.gitrevision',
 
    And use `GIT_REVISION` var in templates: ::
 
@@ -36,7 +40,7 @@ Setup and use
 
 #. Or if you want use git revision in **views and templates**, add gitrevision middleware in settings: ::
 
-        MIDDLEWARE_CLASSES += 'git_revision.middleware.GitRevision',
+        MIDDLEWARE_CLASSES += 'gitrevision.middleware.GitRevision',
 
    Using in views: ::
 
@@ -49,6 +53,10 @@ Setup and use
         ...
         <script src="/test.js?{{ request.git_revision }}"></script>
         ...
+
+#. Maybe you be needed append **GIT_PATH** in django settings: ::
+
+    GIT_PATH = <path_to_your_git_repository>
 
 
 Bug tracker

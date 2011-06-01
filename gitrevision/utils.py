@@ -1,14 +1,13 @@
 from git import Repo, InvalidGitRepositoryError
 
-from django.conf import settings
+from gitrevision import settings
 
 
 def gitrevision():
     try:
-        # specify GIT_PATH = os.path.dirname(__file__) in your settings.py 
+        # specify GIT_PATH = os.path.dirname(__file__) in your settings.py
         # if you get an InvalidGitRepositoryError
-        path = getattr(settings, "GIT_PATH", None)
-        return Repo(path).head.commit.hexsha
+        return Repo(settings.GIT_PATH).head.commit.hexsha
 
     except InvalidGitRepositoryError:
         return 'unknown'
