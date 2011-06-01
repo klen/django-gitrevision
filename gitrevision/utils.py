@@ -7,7 +7,7 @@ def gitrevision():
     try:
         # specify GIT_PATH = os.path.dirname(__file__) in your settings.py 
         # if you get an InvalidGitRepositoryError
-        path = getattr(settings.GIT_PATH, None)
+        path = getattr(settings, "GIT_PATH", None)
         return Repo(path).head.commit.hexsha
 
     except InvalidGitRepositoryError:
