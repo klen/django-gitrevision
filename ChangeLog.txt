@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+## 2011-07-03 0.1.4
+-------------------
+* Add link to russian docs
+
 ## 2011-06-01 0.1.4
 -------------------
 * Add GIT_PATH option support

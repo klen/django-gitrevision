@@ -3,6 +3,8 @@ Django Git Revision
 
 **Django Git Revision** is django application that allows use git last head commit hexstring in views and templates.
 
+Описание на русском доступно здесь: http://klen.github.com/git-revision-ru.html
+
 .. contents::
 
 Requirements
@@ -35,6 +37,7 @@ Setup and use
    And use `GIT_REVISION` var in templates: ::
 
         ...
+        <link href="/test.css?{{ GIT_REVISION }}" rel="stylesheet" type="text/css" media="screen" />
         <script src="/test.js?{{ GIT_REVISION }}"></script>
         ...
 
