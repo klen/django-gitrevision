@@ -1,6 +1,10 @@
 Django Git Revision
 ###################
 
+ .. image:: https://raw.github.com/klen/Flask-Mixer/master/deprecated.png
+
+.. warning:: This module is depricated. Use https://github.com/klen/dealer instead.
+
 **Django Git Revision** is django application that allows use git last head commit hexstring in views and templates.
 
 Описание на русском доступно здесь: http://klen.github.com/git-revision-ru.html

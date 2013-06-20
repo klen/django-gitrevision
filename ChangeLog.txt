@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+## 2013-06-20 0.1.5
+-------------------
+* Module is depricated. Use `dealer` instead.
+
 ## 2011-07-03 0.1.4
 -------------------
 * Add link to russian docs
